@@ -1,0 +1,218 @@
+.hi{
+  text-align: right;
+ }
+
+
+ header .hi ul li a {
+  color: white !important;
+}
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 5px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   @import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+height: 100%;
+overflow: hidden;
+}
+
+body { 
+margin:0;
+padding:0;
+perspective: 1px;
+transform-style: preserve-3d;
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+font-family: Nunito;
+background-color: #2e1f44;
+}
+
+h1 {
+ font-size: 250%
+}
+
+h2{
+  color: white;
+}
+
+p ,ol{
+font-size: 140%;
+line-height: 150%;
+color: #333;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: flex-end; 
+}
+
+.dropdown-button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-button a i {
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; 
+  left: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+.slide {
+position: relative;
+padding: 25vh 10%;
+min-height: 100vh;
+width: 100vw;
+box-sizing: border-box;
+box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+transform-style: inherit;
+}
+
+img {
+position: absolute;
+top: 50%;
+left: 35%;
+width: 320px;
+height: 240px;
+transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+padding: 10px;
+border-radius: 5px;
+background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+width: 50%;
+padding: 5%;
+border-radius: 5px;
+background: rgba(240,230,220, .7);
+box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+margin-left: 0;
+margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+margin-left: auto;
+margin-right: 0;
+}
+
+.slide, .slide:before {
+background: 50% 50% / cover;  
+}
+
+.header {
+text-align: center;
+font-size: 175%;
+color: #fff;
+text-shadow: 0 2px 2px #000;
+}
+
+#title {
+background-image: url("https://etimg.etb2bimg.com/photo/96779404.cms");
+z-index:2;
+}
+
+#title h1 {
+transform: translateZ(.25px) scale(.75);
+transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+background-image: url("redbg.png");
+transform: translateZ(-1px) scale(2);
+padding-top: 40px;
+}
+
+#slide2 {
+background-image: url("slide2.jpg");
+z-index:2;
+}
+
+#slide3:before {
+background-image: url("https://img.freepik.com/free-vector/abstract-secure-technology-background_23-2148331624.jpg");
+transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background-image: url("https://assets.website-files.com/62da5816cb0fa508ffd8daae/647f572d8a8e5816d8d97f2c_The%20Ultimate%20Hacker%27s%20Summer%20Navigating%20BlackHat%2C%20DefCon%2C%20and%20BSides%20Las%20Vegas.png");
+  z-index:2;
+}
+
+#slide5:before {
+  background-image: url("https://cricpa.com/wp-content/uploads/2023/08/cybercrime-and-religious-institutions-a-wake-up-call-for-faithful-2048x1000.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide6 {
+  background-image: url("slide6.jpg");
+  z-index:2;
+}

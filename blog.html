@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="blog.scss">
+    <link rel="icon" href="garuda logo.png" type="img/jpg">
+    <style>
+    
+        .hi{
+    text-align: right;
+   }
+   h2{
+    color: white;
+   }
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 5px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+
+     h1{
+        color: black;
+       text-align: center;
+    }
+
+    header .hi ul li a {
+        color: white !important;
+    }
+    
+  
+    a{
+        text-decoration: none;
+    }
+
+    body{
+        background-color: #2e1f44;
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li {
+        position: relative;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: flex;
+        align-items: flex-end; /* Aligns the Events link slightly lower */
+    }
+    
+    .dropdown-button a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .dropdown-button a i {
+        margin-left: 5px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 100%; /* Positions the dropdown content below the link */
+        left: 0;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+    
+
+        /* Additional CSS for carousel */
+        .carousel-item img {
+            height: 400px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for caption */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+        <div>
+            <h2 class="fw-bold">VJ GARUDA VIGILANCE</h2>
+        </div>
+        <div class="hi">
+            <ul style="display: flex; justify-content: space-evenly; list-style-type: none; font-size: 25px;">
+                <li class="m-2"><a href="index.html" target="_blank" style="text-decoration: none; color: black;">Home</a></li>
+                <li class="m-2"><a href="aboutus.html" target="_blank" style="text-decoration: none; color: black;">About Us</a></li>
+                <li class="m-2"><a href="blog.html"  target="_blank"style="text-decoration: none; color: black;">Blog</a></li>
+                <div class="dropdown">
+                    <li class="m-2 dropdown-button">
+                        <a href="events.html" target="_blank" style="text-decoration: none; color: black;">Events <i class="fa fa-caret-down"></i></a>
+                    </li>
+                    <div class="dropdown-content">
+                        <a href="completed.html">Completed Events</a>
+                        <a href="upcoming.html">Upcoming Events</a>
+                    </div>
+                </div>
+                <li class="m-2"><a href="gallery.html" target="_blank" style="text-decoration: none; color: black;">Gallery</a></li>
+                <li class="m-2"><a href="contact.html"  target="_blank"style="text-decoration: none; color: black;">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-photo/young-adult-businessman-sitting-desk-typing-generated-by-ai_188544-26243.jpg?t=st=1718216164~exp=1718219764~hmac=e822552b037f603ee94eb235c0c5607e6fdeab6dc66ddf080f8ea314882ba13e&w=1060" class="d-block w-100" alt="error1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5> 1. Intrusion Detection System (IDS):</h5>
+                    <p>
+                    
+                      An IDS is a security tool that monitors network or system activities for malicious activities or policy violations. It detects and alerts users or administrators about potential security threats, helping to prevent cyber attacks before they cause damage.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/white-notebook-black-data-firewall_1150-1733.jpg?t=st=1718216468~exp=1718220068~hmac=4998e9fe9add7e3720a21c00c9d49c694bfe0ae27d245d665983871689417f4c&w=900" class="d-block w-100" alt="error2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>2.Penetration Testing Tools</h5>
+                    <p>Penetration testing tools, also known as pen testing tools or ethical hacking tools, are used to simulate cyber attacks on systems, networks, or applications. They help identify vulnerabilities and weaknesses in security defenses, allowing organizations to patch and mitigate potential risks before they are exploited by real attackers.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-vector/stream-binary-code-design_53876-100689.jpg?t=st=1718216395~exp=1718219995~hmac=23073e8346dc72a9b5cbf097c8a80d5214d57b93ed143a48edba47fa94fc016b&w=900" class="d-block w-100" alt="error3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>3.Security Information and Event Management (SIEM) System:</h5>
+                    <p>A SIEM system collects, aggregates, and analyzes log data from various sources across an organization's IT infrastructure. It provides real-time visibility into security events and incidents, enabling rapid detection, investigation, and response to potential threats. SIEM systems play a critical role in enhancing security posture and compliance efforts.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/hooded-hacker-using-computer-dark-room-computer-security-concept_1142-56670.jpg?t=st=1718221363~exp=1718224963~hmac=251c54153d4e145f5dd3e2007004cd6a33cb17689f14f728edeef84f2d933b22&w=900" class="d-block w-100" alt="error4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>4. Password Manager:</h5>
+                    <p>A password manager is an essential tool for managing and securing your passwords. It stores all your passwords in an encrypted vault, requiring you to remember only one master password to access them. This helps prevent password reuse and ensures that your accounts remain protected against unauthorized access.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <script src="blog.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
